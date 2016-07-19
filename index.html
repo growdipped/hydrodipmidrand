@@ -26,7 +26,8 @@
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
-    <link href="css/image.css" rel="stylesheet">
+    <link href="css/scrollbar.css" rel="stylesheet">
+    <link href="css/default.css" rel="stylesheet">
     <link rel="stylesheet" href="css/blueimp-gallery.min.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -106,7 +107,7 @@
                     <ul class="timeline">
                         <li>
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/circle/%20(1).jpg" alt="">
+                                <img class="img-circle img-responsive" src="img/circle/1.jpg" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -120,7 +121,7 @@
                         </li>
                         <li class="timeline-inverted">
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/circle/%20(2).jpg" alt="">
+                                <img class="img-circle img-responsive" src="img/circle/2.jpg" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -134,7 +135,7 @@
                         </li>
                         <li>
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/circle/%20(3).jpg" alt="">
+                                <img class="img-circle img-responsive" src="img/circle/3.jpg" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -148,7 +149,7 @@
                         </li>
                         <li class="timeline-inverted">
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/circle/%20(4).jpg" alt="">
+                                <img class="img-circle img-responsive" src="img/circle/4.jpg" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -162,7 +163,7 @@
                         </li>                        
                         <li>
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/circle/%20(5).jpg" alt="">
+                                <img class="img-circle img-responsive" src="img/circle/5.jpg" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -225,7 +226,7 @@
                     <div id="guns">
                         <script>
                             for(var i =1; i<= 26; i++){
-                              $('#guns').append('<a href="img/guns/%20('+ i +').jpg" data-gallery"><img src="img/guns/thumbs/%20(' + i + ').jpg" alt=""></a>')
+                              $('#guns').append('<a href="img/guns/' + i + '.jpg" data-gallery"></a>')
                             }
                         </script>                                                                            
                     </div>                       
@@ -246,7 +247,7 @@
                     <div id="carparts">
                         <script>
                             for(var i =1; i<= 28; i++){
-                              $('#carparts').append('<a href="img/carparts/%20('+ i +').jpg" data-gallery"><img src="img/carparts/thumbs/%20(' + i + ').jpg" alt=""></a>')
+                              $('#carparts').append('<a href="img/carparts/' + i + '.jpg" data-gallery"></a>')
                             }
                         </script>                                                                            
                     </div> 
@@ -267,16 +268,16 @@
                     <div id="bikeparts">
                         <script>
                             for(var i =1; i<= 23; i++){
-                              $('#bikeparts').append('<a href="img/bikeparts/%20('+ i +').jpg" data-gallery"><img src="img/bikeparts/thumbs/%20(' + i + ').jpg" alt=""></a>')
+                              $('#bikeparts').append('<a href="img/bikeparts/' + i + '.jpg" data-gallery"></a>')
                             }
                         </script>                                                                            
                     </div>                     
                 </div>
                 
                 <div class="portfolio-caption">
-                    <h3>Random Objects</h3>
+                    <h3>Various Objects</h3>
                     <!--<p class="text-muted">Website Design</p>-->
-                    <div id="blueimp-gallery-carousel-randoms" class="blueimp-gallery blueimp-gallery-carousel">
+                    <div id="blueimp-gallery-carousel-various" class="blueimp-gallery blueimp-gallery-carousel">
                         <div class="slides"></div>
                         <h3 class="title"></h3>
                         <a class="prev">‹</a>
@@ -285,10 +286,10 @@
                         <ol class="indicator"></ol>
                     </div>
 
-                    <div id="randoms">
+                    <div id="various">
                         <script>
                             for(var i =1; i<= 13; i++){
-                              $('#randoms').append('<a href="img/randoms/%20('+ i +').jpg" data-gallery"><img src="img/randoms/thumbs/%20(' + i + ').jpg" alt=""></a>')
+                              $('#various').append('<a href="img/various/' + i + '.jpg" data-gallery"></a>')
                             }
                         </script>                                                                            
                     </div>                     
@@ -305,10 +306,10 @@
                         <ol class="indicator"></ol>
                     </div>
 
-                    <div id="patterns">
+                    <div id="patterns" style="height: 550px; overflow: auto;-webkit-border-radius: 20px;-moz-border-radius: 20px;border-radius: 20px;background-color:#E3E3E3;-webkit-box-shadow: #B3B3B3 2px 2px 2px;-moz-box-shadow: #B3B3B3 2px 2px 2px; box-shadow: #B3B3B3 2px 2px 2px;">
                         <script>
-                            for(var i =1; i<= 128; i++){
-                              $('#patterns').append('<a href="img/patterns/%20('+ i +').jpg" data-gallery"><img src="img/patterns/thumbs/%20(' + i + ').jpg" alt=""></a>')
+                            for(var i =1; i<= 149; i++){
+                              $('#patterns').append('<a style="display: inline-block; height: 200px; width: 200px;" href="img/patterns/' + i + '.jpg" data-gallery"><img style="height: 200px; width: 200px;" src="img/patterns/thumbs/' + i + '.jpg" alt=""></a>')
                             }
                         </script>                                                                            
                     </div>                     
@@ -422,9 +423,9 @@
             }
         );
         blueimp.Gallery(
-            document.getElementById('randoms').getElementsByTagName('a'),
+            document.getElementById('various').getElementsByTagName('a'),
             {
-                container: '#blueimp-gallery-carousel-randoms',
+                container: '#blueimp-gallery-carousel-various',
                 carousel: true
             }
         );
@@ -437,38 +438,6 @@
         );                                
     </script> 
    <script>
-        document.getElementById('guns').onclick = function (event) {
-            event = event || window.event;
-            var target = event.target || event.srcElement,
-                link = target.src ? target.parentNode : target,
-                options = {index: link, event: event},
-                links = this.getElementsByTagName('a');
-            blueimp.Gallery(links, options);
-        };
-        document.getElementById('carparts').onclick = function (event) {
-            event = event || window.event;
-            var target = event.target || event.srcElement,
-                link = target.src ? target.parentNode : target,
-                options = {index: link, event: event},
-                links = this.getElementsByTagName('a');
-            blueimp.Gallery(links, options);
-        };
-        document.getElementById('bikeparts').onclick = function (event) {
-            event = event || window.event;
-            var target = event.target || event.srcElement,
-                link = target.src ? target.parentNode : target,
-                options = {index: link, event: event},
-                links = this.getElementsByTagName('a');
-            blueimp.Gallery(links, options);
-        };
-        document.getElementById('randoms').onclick = function (event) {
-            event = event || window.event;
-            var target = event.target || event.srcElement,
-                link = target.src ? target.parentNode : target,
-                options = {index: link, event: event},
-                links = this.getElementsByTagName('a');
-            blueimp.Gallery(links, options);
-        };
         document.getElementById('patterns').onclick = function (event) {
             event = event || window.event;
             var target = event.target || event.srcElement,
